@@ -3,14 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Bianconiglio Wine Bar & Local Food - Benvenuto">
-  <title>Bianconiglio Wine Bar & Local Food</title>
+  <meta name="description" content="Bianconiglio Wine Bar & Local Food - Menù digitale">
+  <title>Menù • Bianconiglio Wine Bar & Local Food</title>
 
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
+  <!-- SVG FILTER GLASS -->
   <svg class="svgFilter" aria-hidden="true">
     <filter id="glass-distortion">
       <feTurbulence type="turbulence" baseFrequency="0.008" numOctaves="2" result="noise"></feTurbulence>
@@ -18,6 +19,7 @@
     </filter>
   </svg>
 
+  <!-- PRELOADER -->
   <div id="preloader" aria-label="Caricamento sito">
     <div class="preloaderCard">
       <img src="logo.svg" alt="Logo Bianconiglio" class="preloaderLogo">
@@ -25,8 +27,10 @@
     </div>
   </div>
 
+  <!-- APP -->
   <div id="app" class="appHidden">
 
+    <!-- HEADER -->
     <header class="siteHeader" id="siteHeader">
       <div class="container navBar glassCard glassInteractive">
         <a href="index.html" class="brand">
@@ -35,13 +39,13 @@
           </div>
           <div class="brandText">
             <strong>Bianconiglio Wine Bar & Local Food</strong>
-            <span>Arzachena</span>
+            <span>Menù digitale</span>
           </div>
         </a>
 
         <nav class="navLinks">
           <a href="index.html" class="navLink">Home</a>
-          <a href="menu.html" class="navLink">Menù</a>
+          <a href="#menu" class="navLink">Menù</a>
           <a href="#contatti" class="navLink">Contatti</a>
           <a href="https://www.instagram.com/bianconigliowinebar2.0/" target="_blank" class="navLink instagramLink">
             <i class="fa-brands fa-instagram"></i> Instagram
@@ -55,13 +59,15 @@
 
       <div class="mobileMenu glassCard" id="mobileMenu">
         <a href="index.html">Home</a>
-        <a href="menu.html">Menù</a>
+        <a href="#menu">Menù</a>
         <a href="#contatti">Contatti</a>
         <a href="https://www.instagram.com/bianconigliowinebar2.0/" target="_blank">Instagram</a>
       </div>
     </header>
 
     <main>
+
+      <!-- HERO MENU -->
       <section class="hero container" id="top">
         <div class="heroGrid">
           <div class="heroMain glassCard glassInteractive reveal">
@@ -70,23 +76,27 @@
             <div class="glassSpecular"></div>
 
             <div class="glassContent heroContent">
-              <p class="eyebrow">Wine Bar • Local Food • Arzachena</p>
-              <h1>Benvenuto nel mondo Bianconiglio.</h1>
+              <p class="eyebrow">Digital Menu • Bianconiglio • Arzachena</p>
+              <h1>Il nostro menù digitale.</h1>
               <p class="heroText">
-                Un luogo dove eleganza, atmosfera e gusto si incontrano.
-                Scopri il nostro menù digitale e seguici per restare aggiornato
-                su novità, serate e proposte speciali.
+                Scopri la nostra selezione di vini, cocktail e local food.
+                Un’esperienza pensata per accompagnare aperitivi, serate e momenti speciali.
               </p>
 
               <div class="heroActions">
-                <a href="menu.html" class="btn btnPrimary">
+                <a href="#menu" class="btn btnPrimary">
                   <i class="fa-solid fa-book-open"></i>
-                  Apri il menù
+                  Vai al menù
                 </a>
 
-                <a href="https://www.instagram.com/bianconigliowinebar2.0/" target="_blank" class="btn btnGlass">
-                  <i class="fa-brands fa-instagram"></i>
-                  Instagram
+                <a href="tel:+390000000000" class="btn btnGlass">
+                  <i class="fa-solid fa-phone"></i>
+                  Telefono
+                </a>
+
+                <a href="https://wa.me/390000000000" target="_blank" class="btn btnGlass">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  WhatsApp
                 </a>
               </div>
 
@@ -105,21 +115,184 @@
 
             <div class="glassContent">
               <div class="sideBlock">
-                <h3>Esperienza digitale</h3>
-                <p>Accedi rapidamente al nostro menù digitale da smartphone.</p>
+                <h3>Menù veloce</h3>
+                <p>Scorri tra le sezioni o contattaci direttamente.</p>
               </div>
 
               <div class="fakeQr"></div>
 
               <div class="sideButtons">
-                <a href="menu.html" class="btn btnGlass">Vai al menù</a>
-                <a href="#contatti" class="btn btnGlass">Contatti</a>
+                <a href="#vini" class="btn btnGlass">Vini</a>
+                <a href="#drink" class="btn btnGlass">Drink</a>
+                <a href="#food" class="btn btnGlass">Food</a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- MENU -->
+      <section class="menuSection container" id="menu">
+        <div class="sectionHeading reveal">
+          <p class="eyebrow">Digital Menu</p>
+          <h2>Le nostre proposte</h2>
+          <p>Una selezione raffinata di vini, cocktail e sapori locali.</p>
+        </div>
+
+        <div class="menuGrid">
+
+          <!-- VINI -->
+          <article class="menuCard glassCard glassInteractive reveal" id="vini">
+            <div class="glassFilter"></div>
+            <div class="glassOverlay"></div>
+            <div class="glassSpecular"></div>
+
+            <div class="glassContent">
+              <div class="menuCardHeader">
+                <h3>Vini</h3>
+                <span class="menuTag">Calice / Bottiglia</span>
+              </div>
+
+              <div class="menuItem">
+                <div>
+                  <strong>Vermentino di Sardegna DOC</strong>
+                  <p>Fresco, agrumato, elegante.</p>
+                </div>
+                <span>€ 6 / € 24</span>
+              </div>
+
+              <div class="menuItem">
+                <div>
+                  <strong>Nuragus</strong>
+                  <p>Secco, leggero, minerale.</p>
+                </div>
+                <span>€ 5 / € 20</span>
+              </div>
+
+              <div class="menuItem">
+                <div>
+                  <strong>Cannonau di Sardegna DOC</strong>
+                  <p>Morbido, speziato, intenso.</p>
+                </div>
+                <span>€ 6 / € 26</span>
+              </div>
+
+              <div class="menuItem">
+                <div>
+                  <strong>Bollicine Brut</strong>
+                  <p>Fine e piacevole all’aperitivo.</p>
+                </div>
+                <span>€ 6</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- DRINK -->
+          <article class="menuCard glassCard glassInteractive reveal" id="drink">
+            <div class="glassFilter"></div>
+            <div class="glassOverlay"></div>
+            <div class="glassSpecular"></div>
+
+            <div class="glassContent">
+              <div class="menuCardHeader">
+                <h3>Drink & Cocktail</h3>
+                <span class="menuTag">Classici & Signature</span>
+              </div>
+
+              <div class="menuItem">
+                <div>
+                  <strong>Spritz</strong>
+                  <p>L’aperitivo intramontabile.</p>
+                </div>
+                <span>€ 7</span>
+              </div>
+
+              <div class="menuItem">
+                <div>
+                  <strong>Gin Tonic</strong>
+                  <p>Selezione gin e toniche premium.</p>
+                </div>
+                <span>€ 9</span>
+              </div>
+
+              <div class="menuItem">
+                <div>
+                  <strong>Negroni</strong>
+                  <p>Equilibrato, deciso, iconico.</p>
+                </div>
+                <span>€ 9</span>
+              </div>
+
+              <div class="menuItem">
+                <div>
+                  <strong>Bianconiglio Signature</strong>
+                  <p>Il drink identitario della casa.</p>
+                </div>
+                <span>€ 10</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- FOOD -->
+          <article class="menuCard glassCard glassInteractive reveal" id="food">
+            <div class="glassFilter"></div>
+            <div class="glassOverlay"></div>
+            <div class="glassSpecular"></div>
+
+            <div class="glassContent">
+              <div class="menuCardHeader">
+                <h3>Local Food</h3>
+                <span class="menuTag">Taglieri & Sfizi</span>
+              </div>
+
+              <div class="menuItem">
+                <div>
+                  <strong>Tagliere Sardo</strong>
+                  <p>Salumi e formaggi locali selezionati.</p>
+                </div>
+                <span>€ 16</span>
+              </div>
+
+              <div class="menuItem">
+                <div>
+                  <strong>Tagliere Misto</strong>
+                  <p>Selezione del giorno.</p>
+                </div>
+                <span>€ 18</span>
+              </div>
+
+              <div class="menuItem">
+                <div>
+                  <strong>Pane carasau & condimenti</strong>
+                  <p>Semplice, autentico, da condividere.</p>
+                </div>
+                <span>€ 6</span>
+              </div>
+
+              <div class="menuItem">
+                <div>
+                  <strong>Seadas</strong>
+                  <p>Dolce tradizionale con miele.</p>
+                </div>
+                <span>€ 7</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="menuNotice glassCard reveal">
+          <div class="glassFilter"></div>
+          <div class="glassOverlay"></div>
+          <div class="glassSpecular"></div>
+
+          <div class="glassContent">
+            <strong>Allergeni:</strong> per informazioni su ingredienti e allergeni chiedi sempre al personale.
+            Disponibilità e prezzi possono subire variazioni.
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTATTI -->
       <section class="contactSection container" id="contatti">
         <div class="sectionHeading reveal">
           <p class="eyebrow">Contact</p>
@@ -127,78 +300,79 @@
           <p>Passa a trovarci o contattaci direttamente.</p>
         </div>
 
-          <div class="contactGrid">
-            <article class="glassCard glassInteractive reveal">
-              <div class="glassFilter"></div>
-              <div class="glassOverlay"></div>
-              <div class="glassSpecular"></div>
-          
-              <div class="glassContent contactCard">
-                <h3><i class="fa-solid fa-location-dot"></i> Dove siamo</h3>
-                <p>Arzachena (SS)</p>
-                <a class="btn btnGlass" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Arzachena%20Bianconiglio%20Wine%20Bar">
-                  Apri su Maps
-                </a>
-              </div>
-            </article>
-          
-            <article class="glassCard glassInteractive reveal">
-              <div class="glassFilter"></div>
-              <div class="glassOverlay"></div>
-              <div class="glassSpecular"></div>
-          
-              <div class="glassContent contactCard">
-                <h3><i class="fa-regular fa-clock"></i> Orari</h3>
-                <p>Lun – Dom</p>
-                <p>18:00 – 02:00</p>
-              </div>
-            </article>
-          
-            <article class="glassCard glassInteractive reveal">
-              <div class="glassFilter"></div>
-              <div class="glassOverlay"></div>
-              <div class="glassSpecular"></div>
-          
-              <div class="glassContent contactCard">
-                <h3><i class="fa-solid fa-phone"></i> Telefono</h3>
-                <p>+39 000 000 0000</p>
-                <a class="btn btnGlass" href="tel:+390000000000">
-                  Chiama ora
-                </a>
-              </div>
-            </article>
-          
-            <article class="glassCard glassInteractive reveal">
-              <div class="glassFilter"></div>
-              <div class="glassOverlay"></div>
-              <div class="glassSpecular"></div>
-          
-              <div class="glassContent contactCard">
-                <h3><i class="fa-brands fa-whatsapp"></i> WhatsApp</h3>
-                <p>Scrivici direttamente</p>
-                <a class="btn btnGlass" target="_blank" href="https://wa.me/390000000000">
-                  Apri chat
-                </a>
-              </div>
-            </article>
-          
-            <article class="glassCard glassInteractive reveal">
-              <div class="glassFilter"></div>
-              <div class="glassOverlay"></div>
-              <div class="glassSpecular"></div>
-          
-              <div class="glassContent contactCard">
-                <h3><i class="fa-brands fa-instagram"></i> Instagram</h3>
-                <p>@bianconigliowinebar2.0</p>
-                <a class="btn btnGlass" target="_blank" href="https://www.instagram.com/bianconigliowinebar2.0/">
-                  Apri profilo
-                </a>
-              </div>
-            </article>
-          </div>
+        <div class="contactGrid">
+          <article class="glassCard glassInteractive reveal">
+            <div class="glassFilter"></div>
+            <div class="glassOverlay"></div>
+            <div class="glassSpecular"></div>
+
+            <div class="glassContent contactCard">
+              <h3><i class="fa-solid fa-location-dot"></i> Dove siamo</h3>
+              <p>Arzachena (SS)</p>
+              <a class="btn btnGlass" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Arzachena%20Bianconiglio%20Wine%20Bar">
+                Apri su Maps
+              </a>
+            </div>
+          </article>
+
+          <article class="glassCard glassInteractive reveal">
+            <div class="glassFilter"></div>
+            <div class="glassOverlay"></div>
+            <div class="glassSpecular"></div>
+
+            <div class="glassContent contactCard">
+              <h3><i class="fa-regular fa-clock"></i> Orari</h3>
+              <p>Lun – Dom</p>
+              <p>18:00 – 02:00</p>
+            </div>
+          </article>
+
+          <article class="glassCard glassInteractive reveal">
+            <div class="glassFilter"></div>
+            <div class="glassOverlay"></div>
+            <div class="glassSpecular"></div>
+
+            <div class="glassContent contactCard">
+              <h3><i class="fa-solid fa-phone"></i> Telefono</h3>
+              <p>+39 000 000 0000</p>
+              <a class="btn btnGlass" href="tel:+390000000000">
+                Chiama ora
+              </a>
+            </div>
+          </article>
+
+          <article class="glassCard glassInteractive reveal">
+            <div class="glassFilter"></div>
+            <div class="glassOverlay"></div>
+            <div class="glassSpecular"></div>
+
+            <div class="glassContent contactCard">
+              <h3><i class="fa-brands fa-whatsapp"></i> WhatsApp</h3>
+              <p>Scrivici direttamente</p>
+              <a class="btn btnGlass" target="_blank" href="https://wa.me/390000000000">
+                Apri chat
+              </a>
+            </div>
+          </article>
+
+          <article class="glassCard glassInteractive reveal">
+            <div class="glassFilter"></div>
+            <div class="glassOverlay"></div>
+            <div class="glassSpecular"></div>
+
+            <div class="glassContent contactCard">
+              <h3><i class="fa-brands fa-instagram"></i> Instagram</h3>
+              <p>@bianconigliowinebar2.0</p>
+              <a class="btn btnGlass" target="_blank" href="https://www.instagram.com/bianconigliowinebar2.0/">
+                Apri profilo
+              </a>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
 
+    <!-- FOOTER -->
     <footer class="siteFooter container">
       <div class="footerCard glassCard reveal">
         <div class="glassFilter"></div>
@@ -207,7 +381,7 @@
 
         <div class="glassContent footerContent">
           <p>© <span id="year"></span> Bianconiglio Wine Bar & Local Food</p>
-          <a href="menu.html" class="btn btnGlass">Apri il menù</a>
+          <a href="index.html" class="btn btnGlass">Torna alla home</a>
         </div>
       </div>
     </footer>
@@ -216,3 +390,6 @@
   <script src="app.js"></script>
 </body>
 </html>
+
+
+
