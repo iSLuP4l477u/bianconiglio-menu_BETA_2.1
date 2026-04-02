@@ -851,3 +851,24 @@ a{
   font-weight:700;
   color:rgba(255,255,255,.92);
 }
+
+.allergenGrid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+  gap:16px;
+}
+
+.allergenCard .glassContent{
+  padding:20px;
+}
+
+.allergenCard h3{
+  margin:0 0 10px;
+  font-size:18px;
+}
+
+.allergenCard p{
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+}
